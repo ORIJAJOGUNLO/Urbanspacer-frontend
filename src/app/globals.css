@@ -17,5 +17,35 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins;
+}
+
+.tool-tip-font-size {
+  font-size: 0.75rem;
+  color: #212121;
+}
+
+.jumbo-text-header {
+  font-size: 3.625rem;
+  /* width: 708px; */
+  height: 126px;
+  line-height: 64px;
+}
+
+.some-para-text {
+  font-family: Lora;
+}
+
+.sub-text {
+  width: 44.125rem;
+}
+
+.jumbo-buttons {
+}
+
+.black-button {
+  background-color: #212121;
+  border-radius: 25px;
+  font-weight: 200;
+  /* height: 50px; */
 }
