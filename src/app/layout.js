@@ -1,22 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Poppins } from "next/font/google";
-import { Roboto } from "next/font/google"; // Import another font
-
-// Define the Poppins font
-export const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin", "latin-ext"],
-});
-
-// Define the Roboto font
-export const roboto = Roboto({
-  weight: ["400", "500", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin", "latin-ext"],
-});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff", // Corrected to use poppins directly
