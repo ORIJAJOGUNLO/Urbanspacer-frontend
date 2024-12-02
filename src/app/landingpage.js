@@ -1,6 +1,11 @@
 import HomeHeader from "./components/HomepageHeader";
+import EmblaCarousel from "./components/ProductSlider/ProductSlider";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
+
+const OPTIONS = { align: "start", loop: true };
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 export default function LandingPage() {
   return (
     <div>
@@ -45,24 +50,30 @@ export default function LandingPage() {
               <FaAngleRight className="ml-2" />
             </button>
             {/* Button 2 */}
-            <button className="flex items-center px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+            <button
+              className="flex items-center px-2 py-2 bg-white text-black rounded hover:bg-green-600"
+              style={{ borderRadius: "25px" }}
+            >
               <ul className="flex">
                 <li className="">
                   <Image
-                    src="/new-trophy.svg"
+                    src="/customer-urban-export.webp"
                     width={35}
                     height={35}
                     alt="trophy"
                   />
                 </li>
-                <li className="tool-tip-font-size px-4 py-2 rounded">
-                  Most trusted real estate company
+                <li className="tool-tip-font-size px-4 py-2">
+                  Get Started with Rent Financing{" "}
                 </li>
               </ul>
             </button>
           </div>
         </div>
       </div>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      {/* slider */}
+      {/* end of jumbo */}
     </div>
     // end of LandingPage div
   );

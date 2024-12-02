@@ -49,3 +49,16 @@ body {
   font-weight: 200;
   /* height: 50px; */
 }
+
+.embla {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
