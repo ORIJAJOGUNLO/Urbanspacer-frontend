@@ -8,7 +8,7 @@ const SignupPage = () => {
     <div>
       <AuthLayout>
         {/* Left Section with Background */}
-        <div className='flex-1'>
+        <div className='hidden lg:flex lg:flex-1'>
           <div className='flex flex-col h-5/6 justify-center items-center'>
             <h1 className="text-white text-5xl mt-24 font-bold px-8">
             Welcome to Urban Spacer® – Transforming  Real Estate Solutions!
@@ -17,10 +17,10 @@ const SignupPage = () => {
         </div>
 
         {/* Right section with Background */}
-        <div className="flex-1 flex items-center justify-center bg-red text-black">
-          <div className='bg-white w-2/3 max-h-[85vh] flex flex-col px-16 rounded-2xl mt-12'>
-            <h1 className='mt-6'>Create a free account</h1>
-            <p>Sign up to access tailored services for your real estate needs</p>
+        <div className="flex flex-1 items-center justify-center bg-red text-black">
+          <div className='bg-white lg:w-2/3 lg:max-h-[85vh] flex flex-col px-4 lg:px-16 rounded-2xl lg:mt-12'>
+            <h1 className='mt-6 text-3xl font-medium'>Create a free account</h1>
+            <p className='font-light text-base'>Sign up to access tailored services for your real estate needs</p>
             <form className="mt-6 space-y-4">
               <div>
                 <label htmlFor="fullname" className="block text-sm font-medium text-gray-700">
@@ -29,7 +29,7 @@ const SignupPage = () => {
                 <input
                   type="name"
                   id="name"
-                  className="mt-1 block w-full px-4 rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
+                  className="mt-1 block w-full px-4 rounded-3xl py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
@@ -40,7 +40,7 @@ const SignupPage = () => {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full px-4 rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
+                  className="mt-1 block w-full px-4 rounded-3xl py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
@@ -52,11 +52,11 @@ const SignupPage = () => {
                 <input
                   type="password"
                   id="password"
-                  className="mt-1 block w-full rounded-full py-3 px-4 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
+                  className="mt-1 block w-full rounded-3xl py-3 px-4 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
-              <div>
+              <div className='text-xs font-light'>
                 <p>Use 8 or more characters with a mix of letters, numbers and symbols. Must not contain your name or username.</p>
               </div>
 
@@ -69,7 +69,7 @@ const SignupPage = () => {
             </form>
 
             {/* Sign Up Link */}
-          <div className="text-center text-sm text-gray-600 mt-12">
+          <div className="text-center text-sm text-gray-600 mt-10">
             Don't have an account?{' '}
             <a href="/signup" className="text-black underline font-medium hover:underline">
               Create an account

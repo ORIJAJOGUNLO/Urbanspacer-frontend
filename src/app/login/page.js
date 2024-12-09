@@ -8,7 +8,7 @@ const LoginPage = () => {
     <div>
       <AuthLayout>
         {/* Left Section with Background */}
-        <div className='flex-1'>
+        <div className='hidden lg:flex lg:flex-1'>
           <div className='flex flex-col h-5/6 justify-center items-center'>
             <h1 className="text-white text-8xl mt-24 font-bold px-8">
               Great to have you back!
@@ -18,8 +18,8 @@ const LoginPage = () => {
 
         {/* Right section with Background */}
         <div className="flex-1 flex items-center justify-center bg-red text-black">
-          <div className='bg-white w-1/2 flex flex-col px-16 rounded-2xl mt-12'>
-            <h1 className='my-6'>Sign in</h1>
+          <div className='bg-white lg:w-2/3 lg:max-h-[85vh] flex flex-col px-4 lg:px-16 rounded-2xl lg:mt-12'>
+            <h1 className='mt-6 text-3xl font-medium'>Sign in</h1>
             <form className="mt-6 space-y-4">
             <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -28,7 +28,7 @@ const LoginPage = () => {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-3xl py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 />
               </div>
 
@@ -45,7 +45,7 @@ const LoginPage = () => {
                 <input
                   type="password"
                   id="password"
-                  className="mt-1 block w-full rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-3xl py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 />
               </div>
 
@@ -59,9 +59,9 @@ const LoginPage = () => {
 
             {/* Sign Up Link */}
           <div className="text-center text-sm text-gray-600 mt-12">
-            Don't have an account?{' '}
+            Don't have an account?&ensp;
             <a href="/signup" className="text-black underline font-medium hover:underline">
-              Create an account
+               Create an account
             </a>
           </div>
 
