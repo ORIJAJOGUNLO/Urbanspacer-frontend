@@ -16,11 +16,9 @@ const SignupPage = () => {
 
         {/* Right section with Background */}
         <div className="flex-1 flex items-center justify-center bg-red text-black">
-          <div className="bg-white w-2/3 flex flex-col px-16 rounded-2xl mt-12">
-            <h1 className="mt-6">Create a free account</h1>
-            <p>
-              Sign up to access tailored services for your real estate needs
-            </p>
+          <div className='bg-white w-2/3 max-h-[85vh] flex flex-col px-16 rounded-2xl mt-12'>
+            <h1 className='mt-6'>Create a free account</h1>
+            <p>Sign up to access tailored services for your real estate needs</p>
             <form className="mt-6 space-y-4">
               <div>
                 <label
@@ -32,7 +30,7 @@ const SignupPage = () => {
                 <input
                   type="name"
                   id="name"
-                  className="mt-1 block w-full rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full px-4 rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
@@ -46,7 +44,7 @@ const SignupPage = () => {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full px-4 rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
@@ -61,7 +59,7 @@ const SignupPage = () => {
                 <input
                   type="password"
                   id="password"
-                  className="mt-1 block w-full rounded-full py-3 border border-[rgba(131,131,131,1)] shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="mt-1 block w-full rounded-full py-3 px-4 border border-[rgba(131,131,131,1)] shadow-sm focus:outline-none"
                 />
               </div>
 
