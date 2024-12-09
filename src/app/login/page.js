@@ -1,7 +1,5 @@
-import React from 'react'
-import AuthLayout from '../components/AuthLayout'
-
-
+import React from "react";
+import AuthLayout from "../components/AuthLayout";
 
 const LoginPage = () => {
   return (
@@ -21,8 +19,11 @@ const LoginPage = () => {
           <div className='bg-white lg:w-2/3 lg:max-h-[85vh] flex flex-col px-4 lg:px-16 rounded-2xl lg:mt-12'>
             <h1 className='mt-6 text-3xl font-medium'>Sign in</h1>
             <form className="mt-6 space-y-4">
-            <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email address
                 </label>
                 <input
@@ -35,7 +36,10 @@ const LoginPage = () => {
               {/* Password Input */}
               <div>
                 <div className="flex justify-between items-center">
-                  <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="password"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Password
                   </label>
                   <a href="#" className="text-sm underline">
@@ -51,53 +55,60 @@ const LoginPage = () => {
 
               {/* Sign In Button */}
               <div>
-                <button type="submit" className="w-full mt-6 py-3 rounded-full px-4 bg-[rgba(33,33,33,1)] text-white">
+                <button
+                  type="submit"
+                  className="w-full mt-6 py-3 rounded-full px-4 bg-[rgba(33,33,33,1)] text-white"
+                >
                   Sign in
                 </button>
               </div>
             </form>
 
             {/* Sign Up Link */}
-          <div className="text-center text-sm text-gray-600 mt-12">
-            Don't have an account?&ensp;
-            <a href="/signup" className="text-black underline font-medium hover:underline">
-               Create an account
-            </a>
-          </div>
+            <div className="text-center text-sm text-gray-600 mt-12">
+              Don't have an account?
+              <a
+                href="/signup"
+                className="text-black underline font-medium hover:underline"
+              >
+                Create an account
+              </a>
+            </div>
 
-          {/* OR Divider */}
-          <div className="flex items-center my-4">
-            <hr className="flex-grow border-gray-300" />
-            <span className="mx-4 text-sm text-gray-500">OR</span>
-            <hr className="flex-grow border-gray-300" />
-          </div>
+            {/* OR Divider */}
+            <div className="flex items-center my-4">
+              <hr className="flex-grow border-gray-300" />
+              <span className="mx-4 text-sm text-gray-500">OR</span>
+              <hr className="flex-grow border-gray-300" />
+            </div>
 
-          {/* Social Login Buttons */}
-          <div className="flex justify-center space-x-4">
-            <button className="p-2">
-              <img src='/facebook.svg' alt='facebook' />
-            </button>
-            <button className="p-2">
-            <img src='/google.svg' alt='gooogle' />
-            </button>
-          </div>
+            {/* Social Login Buttons */}
+            <div className="flex justify-center space-x-4">
+              <button className="p-2">
+                <img src="/facebook.svg" alt="facebook" />
+              </button>
+              <button className="p-2">
+                <img src="/google.svg" alt="gooogle" />
+              </button>
+            </div>
 
-          {/* Terms and Privacy */}
-          <div className="text-xs text-gray-500 text-center my-12">
-            By continuing, you confirm you are 18 or over and agree to our{' '}
-            <a href="#" className="underline">
-              Privacy Policy
-            </a>{' '}
-            and{' '}
-            <a href="#" className="underline">
-              Terms of Use
-            </a>.
-          </div>
+            {/* Terms and Privacy */}
+            <div className="text-xs text-gray-500 text-center my-12">
+              By continuing, you confirm you are 18 or over and agree to our{" "}
+              <a href="#" className="underline">
+                Privacy Policy
+              </a>
+              and
+              <a href="#" className="underline">
+                Terms of Use
+              </a>
+              .
+            </div>
           </div>
         </div>
       </AuthLayout>
     </div>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;
