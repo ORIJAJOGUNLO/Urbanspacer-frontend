@@ -97,8 +97,8 @@ const LoginPage = () => {
               By continuing, you confirm you are 18 or over and agree to our{" "}
               <a href="#" className="underline">
                 Privacy Policy
-              </a>{" "}
-              and{" "}
+              </a>
+              and
               <a href="#" className="underline">
                 Terms of Use
               </a>
