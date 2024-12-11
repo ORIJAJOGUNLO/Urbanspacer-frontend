@@ -1,5 +1,5 @@
 import "./globals.css";
-import { poppins, roboto } from './fonts/themefonts.ts'
+import { poppins, lora } from './fonts/themefonts.ts'
 
 
 export const metadata = {

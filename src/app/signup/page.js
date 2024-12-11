@@ -1,5 +1,6 @@
 import React from "react";
 import AuthLayout from "../components/AuthLayout";
+import { lora } from '../fonts/themefonts'
 
 const SignupPage = () => {
   return (
@@ -18,7 +19,7 @@ const SignupPage = () => {
         <div className="flex flex-1 items-center justify-center bg-red text-black">
           <div className='bg-white lg:w-2/3 lg:max-h-[85vh] flex flex-col px-4 lg:px-16 rounded-2xl lg:mt-12'>
             <h1 className='mt-6 text-3xl font-medium'>Create a free account</h1>
-            <p className='font-light text-base'>Sign up to access tailored services for your real estate needs</p>
+            <p className={`${lora.className} font-semibold text-base`}>Sign up to access tailored services for your real estate needs</p>
             <form className="mt-6 space-y-4">
               <div>
                 <label
@@ -63,7 +64,7 @@ const SignupPage = () => {
                 />
               </div>
 
-              <div>
+              <div className={`${lora.className} text-sm font-normal`}>
                 <p>
                   Use 8 or more characters with a mix of letters, numbers and
                   symbols. Must not contain your name or username.
@@ -74,7 +75,7 @@ const SignupPage = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full mt-6 py-3 rounded-full px-4 bg-[rgba(33,33,33,1)] text-white"
+                  className="w-full mt-6 py-3 rounded-3xl px-4 bg-[rgba(33,33,33,1)] text-white"
                 >
                   Create Account
                 </button>
@@ -82,11 +83,11 @@ const SignupPage = () => {
             </form>
 
             {/* Sign Up Link */}
-            <div className="text-center text-sm text-gray-600 mt-12">
-              Don't have an account?
+            <div className={`${lora.className} text-center text-sm font-normal text-gray-600 mt-12`}>
+              Don't have an account?&ensp;
               <a
                 href="/signup"
-                className="text-black underline font-medium hover:underline"
+                className="text-black underline hover:underline"
               >
                 Create an account
               </a>
@@ -110,7 +111,7 @@ const SignupPage = () => {
             </div>
 
             {/* Terms and Privacy */}
-            <div className="text-xs text-gray-500 text-center my-12">
+            <div className={`${lora.className} text-sm font-normal text-gray-500 text-center my-8`}>
               By continuing, you confirm you are 18 or over and agree to our
               <a href="#" className="underline">
                 Privacy Policy
