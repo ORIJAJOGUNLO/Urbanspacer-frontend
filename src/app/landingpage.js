@@ -1,11 +1,16 @@
 import HomeHeader from "./components/HomepageHeader";
-import EmblaCarousel from "./components/ProductSlider/ProductSlider";
+import EmblaCarousel from "./components/productSlider/ProductSlider";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
+import data from "./components/productSlider/space-data.json";
 
 const OPTIONS = { align: "start", loop: true };
 const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
+const SLIDES = data;
+console.table(SLIDES);
+
 export default function LandingPage() {
   return (
     <div>
@@ -71,7 +76,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <EmblaCarousel slides={data} options={OPTIONS} />
+
       {/* slider */}
       {/* end of jumbo */}
     </div>

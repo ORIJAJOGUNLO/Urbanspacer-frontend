@@ -1,8 +1,6 @@
-
-'use client'
+"use client";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props;
@@ -12,9 +10,9 @@ const EmblaCarousel = (props) => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((user, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+              <div className="embla__slide__number">{user.name}</div>
             </div>
           ))}
         </div>
