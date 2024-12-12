@@ -40,9 +40,11 @@ body {
   width: 44.125rem;
 }
 
-.jumbo-buttons {
+.slider {
+  position: relative;
+  top: 2rem;
+  background: transparent;
 }
-
 .black-button {
   background-color: #212121;
   border-radius: 25px;
@@ -52,7 +54,6 @@ body {
 
 .embla {
   overflow: hidden;
-  background-color: #fff;
 }
 
 .embla__container {

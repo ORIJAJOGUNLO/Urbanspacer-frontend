@@ -3,6 +3,10 @@
     "id": "US001",
     "name": "Central Park Plaza",
     "type": "Commercial",
+    "image": "../fine-house.jpg",
+    "bathroom": 4,
+    "bedroom": 3,
+    "cost": "5000,000",
     "location": {
       "address": "123 Main Street",
       "city": "Metropolis",
@@ -50,8 +54,124 @@
     "id": "US002",
     "name": "Skyline Towers",
     "type": "Residential",
+    "image": "../upstate.jpg",
+    "bathroom": 4,
+    "bedroom": 3,
+    "cost": "400,000",
     "location": {
-      "address": "456 Elm Street",
+      "address": "31 ogbologbo Street",
+      "city": "Uptown",
+      "state": "CA",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 34.052235,
+        "longitude": -118.243683
+      }
+    },
+    "area": {
+      "unit": "sqft",
+      "value": 120000
+    },
+    "amenities": [
+      "Rooftop pool",
+      "Gym",
+      "24/7 security",
+      "Underground parking"
+    ],
+    "zoning": "Residential",
+    "occupancy": {
+      "status": "Fully occupied",
+      "units": 200
+    },
+    "management": {
+      "managedBy": "Skyline Properties Inc.",
+      "contact": {
+        "phone": "+1-555-987-6543",
+        "email": "support@skylineproperties.com"
+      }
+    },
+    "features": {
+      "sustainability": {
+        "energyEfficientLighting": true,
+        "waterRecycling": true
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "nearbyParks": true
+      }
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Modern_Highrise.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Skyline_Residential.jpg"
+    ],
+    "notes": "Exclusive high-rise residential complex with premium facilities."
+  },
+  {
+    "id": "US002",
+    "name": "Skyline Towers",
+    "type": "Residential",
+    "image": "../upstate.jpg",
+    "bathroom": 3,
+    "bedroom": 2,
+    "cost": "700,000",
+    "location": {
+      "address": "26 Ewure street, off rajin street",
+      "city": "Uptown",
+      "state": "CA",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 34.052235,
+        "longitude": -118.243683
+      }
+    },
+    "area": {
+      "unit": "sqft",
+      "value": 120000
+    },
+    "amenities": [
+      "Rooftop pool",
+      "Gym",
+      "24/7 security",
+      "Underground parking"
+    ],
+    "zoning": "Residential",
+    "occupancy": {
+      "status": "Fully occupied",
+      "units": 200
+    },
+    "management": {
+      "managedBy": "Skyline Properties Inc.",
+      "contact": {
+        "phone": "+1-555-987-6543",
+        "email": "support@skylineproperties.com"
+      }
+    },
+    "features": {
+      "sustainability": {
+        "energyEfficientLighting": true,
+        "waterRecycling": true
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "nearbyParks": true
+      }
+    },
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Modern_Highrise.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Skyline_Residential.jpg"
+    ],
+    "notes": "Exclusive high-rise residential complex with premium facilities."
+  },
+  {
+    "id": "US002",
+    "name": "Skyline Towers",
+    "type": "Residential",
+    "image": "../upstate.jpg",
+    "bathroom": 5,
+    "bedroom": 3,
+    "cost": "2,000,000",
+    "location": {
+      "address": "56 paris road, brown cottage",
       "city": "Uptown",
       "state": "CA",
       "country": "USA",

@@ -1,9 +1,9 @@
 .embla {
-  max-width: 48rem;
+  /* max-width: 48rem; */
   margin: auto;
   --slide-height: 19rem;
-  --slide-spacing: 1rem;
-  --slide-size: 89%;
+  --slide-spacing: 2rem;
+  --slide-size: 30%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -29,4 +29,24 @@
   justify-content: center;
   height: var(--slide-height);
   user-select: none;
+}
+
+.propContent {
+  width: 360px;
+}
+
+.amenities {
+  color: #212121;
+}
+
+.propTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.propPrice {
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: lora;
+  color: #212121;
 }

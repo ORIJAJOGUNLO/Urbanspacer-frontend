@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function HomeHeader() {
   return (
     <div className="">
-      <nav className="flex items-center justify-between px-8 py-4 bg-[#f4efe7]">
+      <nav className="flex items-center justify-between h-full px-8 py-4 bg-[#f4efe7]">
         <div className="flex items-center space-x-2">
           <Image
             src="/urbanspacer-darker.svg"
@@ -20,7 +20,12 @@ export default function HomeHeader() {
             href="#"
             className="text-gray-700 hover:text-black text-sm flex items-center space-x-1"
           >
-            <Image src="/home-urban-spacer.svg" alt="Urban Spacer" width={25} height={25} />
+            <Image
+              src="/home-urban-spacer.svg"
+              alt="Urban Spacer"
+              width={25}
+              height={25}
+            />
             <span>Buy a home</span>
           </a>
           <a href="#" className="text-gray-700 hover:text-black text-sm">
@@ -44,7 +49,7 @@ export default function HomeHeader() {
           </div>
 
           <div className="flex items-center space-x-1 text-gray-700">
-            <Image src="call-urban-spacer.svg" alt='' width={20} height={20} />
+            <Image src="call-urban-spacer.svg" alt="" width={20} height={20} />
             <span className="text-sm">Call for assistance</span>
           </div>
         </div>

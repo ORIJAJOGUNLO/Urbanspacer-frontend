@@ -1,5 +1,6 @@
 import HomeHeader from "./components/HomepageHeader";
 import EmblaCarousel from "./components/productSlider/ProductSlider";
+import Shortlet from "./components/Shortlet";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
 import data from "./components/productSlider/space-data.json";
@@ -76,8 +77,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <EmblaCarousel slides={data} options={OPTIONS} />
-
+      <EmblaCarousel slides={data} options={OPTIONS} className="slider" />
+      {/* <Shortlet /> */}
       {/* slider */}
       {/* end of jumbo */}
     </div>
