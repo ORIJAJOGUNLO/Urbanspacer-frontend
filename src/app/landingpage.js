@@ -1,6 +1,9 @@
 import HomeHeader from "./components/HomepageHeader";
 import EmblaCarousel from "./components/productSlider/ProductSlider";
 import Shortlet from "./components/Shortlet";
+import HowUrbanSpacerWorks from "./components/BannerSlider";
+import FeaturesSection from "./components/Features";
+import PropertySlider from "./components/PropertySlider";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
 import data from "./components/productSlider/space-data.json";
@@ -48,7 +51,7 @@ export default function LandingPage() {
           </p>
         </div>
         {/* end of jumbo text */}
-        <div className="jumbo-buttons">
+        <div className="jumbo-buttons mt-2">
           <div className="flex space-x-4">
             {/* Button 1 */}
             <button className="flex items-center px-4 py-2 text-white text-base black-button hover:bg-blue-600">
@@ -78,9 +81,36 @@ export default function LandingPage() {
         </div>
       </div>
       <EmblaCarousel slides={data} options={OPTIONS} className="slider" />
-      {/* <Shortlet /> */}
-      {/* slider */}
-      {/* end of jumbo */}
+      <div className="container mx-auto p-4 about-snippet py-40">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="p-6 rounded">
+            <h1 className="title-h1">About Urban Spacer®</h1>
+          </div>
+          <div className="p-6 about-snippet-text">
+            <p>
+              Whether you’re looking for your next home, investment
+              opportunities, or property management support, Urban Spacer is
+              designed to meet the needs of renters, buyers, and owners alike.
+              Through smart contracts, rent financing options, and comprehensive
+              property listings, we’re committed to making real estate
+              accessible and equitable for all.{" "}
+              <a href="" target="_blank">
+                Read More{">>"}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* end of banner */}
+      <div className="our-projects">
+        <FeaturesSection />
+      </div>
+      <div className="propertySlider">
+        <PropertySlider />
+      </div>
+      <div className="bannerSlider">
+        <HowUrbanSpacerWorks />
+      </div>
     </div>
     // end of LandingPage div
   );

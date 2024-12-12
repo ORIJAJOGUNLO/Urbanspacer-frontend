@@ -4,7 +4,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #212121;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +22,7 @@ body {
 
 .tool-tip-font-size {
   font-size: 0.75rem;
-  color: #212121;
+  color: var(--foreground);
 }
 
 .jumbo-text-header {
@@ -62,4 +62,24 @@ body {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.about-snippet {
+  display: flex;
+  justify-content: center;
+  color: var(--foreground);
+}
+
+.title-h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.about-snippet-text {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.our-projects {
+  background-image: url("/banner-background.webp");
 }

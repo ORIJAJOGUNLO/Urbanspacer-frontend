@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function HomeHeader() {
   return (
     <div className="">
-      <nav className="flex items-center justify-between h-full px-8 py-4 bg-[#f4efe7]">
+      <nav className="flex items-center justify-between px-8 py-4">
         <div className="flex items-center space-x-2">
           <Image
             src="/urbanspacer-darker.svg"
