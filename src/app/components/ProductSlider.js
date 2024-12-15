@@ -1,7 +1,7 @@
 "use client";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import "./ProductSlider.css/";
+import "../components/ProductSlider.css";
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props;
