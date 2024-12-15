@@ -4,6 +4,8 @@ import Shortlet from "./components/Shortlet";
 import HowUrbanSpacerWorks from "./components/BannerSlider";
 import FeaturesSection from "./components/Features";
 import PropertySlider from "./components/PropertySlider";
+import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
 import data from "./components/productSlider/space-data.json";
@@ -110,6 +112,12 @@ export default function LandingPage() {
       </div>
       <div className="bannerSlider">
         <HowUrbanSpacerWorks />
+      </div>
+      <div className="subscribe bg-black pt-24">
+        <Subscribe />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
     // end of LandingPage div

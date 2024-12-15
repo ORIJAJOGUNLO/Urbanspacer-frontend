@@ -32,8 +32,13 @@ body {
   line-height: 64px;
 }
 
-.some-para-text {
+.some-para-text,
+.footer-lora {
   font-family: Lora;
+}
+
+.footer-lora > ul {
+  font-size: 14px;
 }
 
 .sub-text {
@@ -82,4 +87,12 @@ body {
 
 .our-projects {
   background-image: url("/banner-background.webp");
+}
+
+.subscribe {
+  height: 250px;
+}
+
+#footer-col-1 {
+  font-size: 20px;
 }
