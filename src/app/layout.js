@@ -1,6 +1,5 @@
 import "./globals.css";
-import { poppins, lora } from './fonts/themefonts.ts'
-
+import { poppins, lora } from "./fonts/themefonts.ts";
 
 export const metadata = {
   title: "Urban Spacer",

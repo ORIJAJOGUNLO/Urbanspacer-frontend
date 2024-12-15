@@ -54,11 +54,11 @@ const FeaturesSection = () => {
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-gray-600 mb-4">{feature.description}</p>
+              <p className="text-gray-600 mb-4" id="feature_description">{feature.description}</p>
               <a
                 href="#"
                 className="text-blue-600 font-medium hover:underline flex items-center"
-              >
+              id="feature_link">
                 {feature.linkText} <span className="ml-1">›</span>
               </a>
             </div>
