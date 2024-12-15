@@ -1,5 +1,5 @@
 import HomeHeader from "./components/HomepageHeader";
-import EmblaCarousel from "./components/productSlider/ProductSlider";
+import EmblaCarousel from "./components/ProductSlider";
 import Shortlet from "./components/Shortlet";
 import HowUrbanSpacerWorks from "./components/BannerSlider";
 import FeaturesSection from "./components/Features";
@@ -8,7 +8,7 @@ import Subscribe from "./components/Subscribe";
 import Footer from "./components/Footer";
 import { FaAngleRight, FaUser } from "react-icons/fa";
 import Image from "next/image";
-import data from "./components/productSlider/space-data.json";
+import data from "./components/space-data.json";
 
 const OPTIONS = { align: "start", loop: true };
 const SLIDE_COUNT = 5;
