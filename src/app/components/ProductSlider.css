@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   height: var(--slide-height);
-  user-select: none;
+  /* user-select: none; */
 }
 
 .propContent {
@@ -50,3 +50,10 @@
   font-family: lora;
   color: #212121;
 }
+
+
+@media only screen and (min-width: 414px) and (max-width: 820px) {
+  .embla{
+    --slide-size: 100%;
+  }
+ }

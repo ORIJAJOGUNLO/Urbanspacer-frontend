@@ -33,7 +33,7 @@ export default function HomeHeader() {
           </a>
         </div>
         <div className="flex items-center space-x-4">
-          <div className="relative">
+          <div className="relative searchInput">
             <Image
               className="absolute left-2 top-2"
               src="/search-urban-spacer.svg"
@@ -50,7 +50,9 @@ export default function HomeHeader() {
 
           <div className="flex items-center space-x-1 text-gray-700">
             <Image src="call-urban-spacer.svg" alt="" width={20} height={20} />
-            <span className="text-sm">Call for assistance</span>
+            <span className="text-sm">
+              <a href="https://wa.me/message/WLM3UCULITB7D1" target="_blank">Call for assistance</a>
+              </span>
           </div>
         </div>
       </nav>

@@ -42,13 +42,13 @@ export default function LandingPage() {
         </div>
         {/* end of tropy */}
         <div className="jumbo-text mt-8">
-          <h1 className="jumbo-text-header text-center font-semibold">
+          <h1 className="text-sm jumbo-text-header text-center font-semibold">
             Explore, Envision, <br />
             and Find Home
           </h1>
           <p className="text-center text-lg some-para-text sub-text leading-6 mt-6">
             from rentals to real estate investments, Urban Spacer is your
-            one-stop platform for modern, secure, and innovative property
+            one-stop platform  <br/> modern, secure, and innovative property
             solutions.
           </p>
         </div>

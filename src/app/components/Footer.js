@@ -66,6 +66,11 @@ const Footer = () => {
               <p className="text-gray-700 footer-lora">
                 support@urbanspacer.com
               </p>
+              <p className="text-gray-700 footer-lora">
+              +234 906 353 5037
+              </p>
+           
+              
             </div>
             {/* Office Address */}
             <div>
