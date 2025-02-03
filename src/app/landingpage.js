@@ -68,10 +68,10 @@ export default function LandingPage() {
               <ul className="flex">
                 <li className="">
                   <Image
-                    src="/customer-urban-export.webp"
+                    src="/customer-urban-export.png"
                     width={35}
                     height={35}
-                    alt="trophy"
+                    alt="customer"
                   />
                 </li>
                 <li className="tool-tip-font-size px-4 py-2">

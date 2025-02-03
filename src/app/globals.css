@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  color-scheme: light !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #212121;
@@ -112,6 +116,10 @@ body {
   }
   .searchInput >input {
     width: 60px;
+  }
+
+  .trusted-rectangle{
+    display: none;
   }
   
 }
